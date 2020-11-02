@@ -194,20 +194,57 @@ if(catalog){
     console.log(catalog_detail_list)
     catalog_page_list.forEach(function(btn){
         btn.addEventListener('click',function(elem){
-            page = Number(String(this.id).slice(4));
-            catalog_page_list.forEach(function(e){
-                e.style.background = 'var(--second-blue)';
+
+            catalog_text.style.opacity = '0';
+            catalog_title.style.opacity = '0';
+            catalog_subtitle.style.opacity = '0';
+            catalog_detail_list.forEach(function(e){
+                e.style.opacity = '0';
+                console.log(e);
             });
-            this.style.background = "var(--main-blue)";
-            catalog_subtitle.innerText = catalog_info[way]["subtitle"][page-1]
-            catalog_text.innerText = catalog_info[way]['text'][page-1]
-            page++;
-            })
+
+            setTimeout(() => {
+                catalog_text.style.opacity = '1';
+                catalog_title.style.opacity = '1';
+                catalog_subtitle.style.opacity = '1';
+                catalog_detail_list.forEach(function(e){
+                    e.style.opacity = '1';
+                });
+            
+
+
+                page = Number(String(this.id).slice(4));
+                catalog_page_list.forEach(function(e){
+                    e.style.background = 'var(--second-blue)';
+                });
+                this.style.background = "var(--main-blue)";
+                catalog_subtitle.innerText = catalog_info[way]["subtitle"][page-1]
+                catalog_text.innerText = catalog_info[way]['text'][page-1]
+                page++;
+            }, 300);
         })
+    })
 
         let way_label = document.querySelectorAll(".catalog_label_way")
     way_label.forEach(function(label){
         label.addEventListener('click',wayFunc=function(elem){
+
+            catalog_text.style.opacity = '0';
+            catalog_title.style.opacity = '0';
+            catalog_subtitle.style.opacity = '0';
+            catalog_detail_list.forEach(function(e){
+                e.style.opacity = '0';
+            });
+
+            setTimeout(() => {
+                catalog_text.style.opacity = '1';
+                catalog_title.style.opacity = '1';
+                catalog_subtitle.style.opacity = '1';
+                catalog_detail_list.forEach(function(e){
+                e.style.opacity = '1';
+            });
+
+
             page = 0;
             way_label.forEach(function(e){
                 e.style.background = '#fff';
@@ -232,12 +269,31 @@ if(catalog){
                 e.lastChild.textContent = catalog_info[way]['details'][age][detail];
                 detail++;
             })
+        }, 300);
 
             })
         })
     let age_label = document.querySelectorAll(".catalog_label_age")
     age_label.forEach(function(label){
         label.addEventListener('click',ageFunc = function(elem){
+
+            catalog_text.style.opacity = '0';
+            catalog_title.style.opacity = '0';
+            catalog_subtitle.style.opacity = '0';
+            catalog_detail_list.forEach(function(e){
+                e.style.opacity = '0';
+            });
+
+            setTimeout(() => {
+                catalog_text.style.opacity = '1';
+                catalog_title.style.opacity = '1';
+                catalog_subtitle.style.opacity = '1';
+                catalog_detail_list.forEach(function(e){
+                e.style.opacity = '1';
+            });
+      
+
+
             age = this.id;
             let detail = 0;
             age_label.forEach(function(e){
@@ -246,20 +302,17 @@ if(catalog){
                 e.style.top = '-8%';
                 e.style.color = 'var(--second-blue)';
                 e.style.textDecoration = 'none'
-
             })
-            console.log(this)
-            console.log(this)
             this.style.background = 'var(--main-gradient)'
             this.style.color = '#fff';
             this.style.textDecoration = 'underline'
             this.style.height = '12%';
             this.style.top = '-12%';
             catalog_detail_list.forEach(function(e){
-                console.log(e.lastChild.textContent)
                 e.lastChild.textContent = catalog_info[way]['details'][age][detail];
                 detail++;
             })
+                  }, 300);
         })
     })
     ageFunc = ageFunc.bind(age_label[0],age_label[0]);
@@ -352,3 +405,7 @@ faqCards.forEach(function(e){
         }
     })
 })
+
+
+
+

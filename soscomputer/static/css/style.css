@@ -1293,6 +1293,7 @@ footer .about li{
     margin-top:10px;
 }
 .catalog_label_age{
+    transition: 0.3s;
     position: absolute;
     left: 23%;
     background-color: #fff;
@@ -1328,6 +1329,7 @@ footer .about li{
     text-transform: capitalize;
     font-size:30px;
     font-weight: 700;
+    transition: 0.3s;
 }
 .catalog_course_title::after{
     content: '';
@@ -1343,11 +1345,13 @@ footer .about li{
     font-weight: 700;
     margin-top: 7px;
     margin-bottom: 35px;
+    transition: 0.3s;
+
 }
 .catalog_course_text{
     color: #000;
     font-size: 18px;
-
+    transition: 0.3s;
 }
 .catalog_course_list{
     margin-top: auto;
@@ -1360,11 +1364,13 @@ footer .about li{
     color: #000;
     font-size: 15px;
     line-height: 35px;
+    transition: 0.3s;
 }
 .catalog_course_detail img{
     margin-top:-4px;
     height: 15px;
     margin-right: 15px;
+    transition: 0.3s;
 }
 .catalog_enroll_button{
     background-color:var(--second-blue);
@@ -1381,9 +1387,15 @@ footer .about li{
     border-radius: 50px;
     width: 50px;
 }
+.catalog_page_button:hover{
+    background-color: var(--main-yellow) !important;
+}
 .catalog_boy{
     height: 100%;
     border-radius: inherit;
+}
+.last_supper{
+    display: none;
 }
 .catalog_arrow{
     position: absolute;
@@ -1488,7 +1500,6 @@ footer .about li{
     font-weight: 600;
     font-size: 20px;
     user-select: none;
-    padding-right:25px;
 }
 .faq_card_body{
     transform-origin: top;
@@ -1504,12 +1515,68 @@ footer .about li{
 }
 .faq_card[data-open='true'] .faq_card_body{
     transform: scaleY(1);
-    height: auto; /* 175px */
+    height: auto;
     padding-top: 40px;
 
     display: block;
 }
-
+@media (max-width: 1200px){
+    .catalog_page_buttons{
+        margin-left: auto;
+    }
+}
+@media (max-width: 767px){
+    .progs_catalog_body{
+        height: 670px;
+        width: 90%;
+    }
+    .catalog_content{
+        width: auto;
+        height: auto;
+        margin-top: 120px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .catalog_course_subtitle{
+        margin-bottom:7px;
+    }
+    .catalog_course_hud{
+        position: absolute;
+        bottom: 30px;
+    }
+    .catalog_page_buttons{
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .catalog_arrow{
+        display: none;
+    }
+    .catalog_label_age{
+        display: none;
+    }
+    .catalog_label_way{
+        width: 10%;
+        left: -10%;
+    }
+    .way_label_img{
+        display: none;
+    }
+    .way_label_text{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-left: 10px;
+    }
+    .catalog_boy{
+        display: none;
+    }
+    .last_supper{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
 
 
 
@@ -1570,4 +1637,39 @@ footer .about li{
     .course_text_icon{
         /* left: -30px !important; */
     }
+    .course_main_text{
+        font-size: 19px;
+    }
+}
+@media (max-width:576px){
+    .catalog_course_text{
+        font-size: 14px;
+    }
+    .catalog_course_detail{
+        font-size: 12px;
+    }
+    .catalog_course_detail img{
+        margin-right:0;
+    }
+}
+@media (max-width:466px){
+    .catalog_course_hud{
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .catalog_page_buttons{
+        order:1;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .catalog_enroll_button{
+        order:2;
+        width: 76%;
+    }
+
 }

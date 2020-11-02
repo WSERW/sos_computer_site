@@ -304,16 +304,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 pt-4 d-none d-md-block">
-                    <form action="">
+                    <form name='client' method="post" enctype="multipart/form-data">
                         <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
                        Оставьте ваше имя:</label><br>
-                        <input type="text" placeholder="Имя..." class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10"><br>
+                        <input type="text" placeholder="Имя..." name='clientName' class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10"><br>
                         <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">Номер телефона:</label><br>
-                        <input type="text" placeholder="+380..." class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"><br>
+                        <input type="text" placeholder="+380..." name='clientPhone' class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"><br>
                         <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">Напишите нам:</label><br>
                         <div class="wow comment animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                            <textarea id="" name="clientMessage" cols="30" rows="10" placeholder="Введите текст" ></textarea>
                             <button class="send"><img src="{% static 'img/telegramm.png' %}" alt="" class="send_icon"></button>
+                            {% csrf_token %}
                         </div>
                         <div class="wow perc_right wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.9s" data-wow-iteration="1" data-wow-distanse="10">
                             <input type="checkbox" id='persRight'>

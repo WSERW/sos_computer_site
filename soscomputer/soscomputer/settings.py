@@ -28,8 +28,11 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '85680d651617.ngrok.io',
     '127.0.0.1',
+    '192.168.0.101',
+    '0.0.0.0',
     'sos-computer.site',
     'www.sos-computer.site',
+    '*'
 ]
 
 
@@ -118,6 +121,16 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_HOST_USER = 'soscomputeracademy@gmail.com'
+
+EMAIL_HOST_PASSWORD = 'sosca2001'
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
 
 
 # Static files (CSS, JavaScript, Images)
