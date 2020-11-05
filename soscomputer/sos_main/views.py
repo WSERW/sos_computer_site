@@ -25,5 +25,9 @@ def index(request):
 
     else:
         return render(request, 'sos_main/index.html',context={})
+
 def course(request):
     return render(request, 'sos_main/course.html',context={})
+
+def services(request):
+    return render(request,'sos_main/services.html',context={})

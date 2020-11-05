@@ -463,7 +463,7 @@ text-shadow:
 
 
 .navbar-nav{
-    margin-right: 160px;
+    /* margin-right: 160px; */
 }
 .nav-link{
     color: #fff !important;
@@ -471,6 +471,7 @@ text-shadow:
     opacity: 1;
     position: relative;
     transition: 0.2s;
+    text-shadow: 2px 2px 5px #444;
 
 }
 .nav-link:before{
@@ -1520,11 +1521,224 @@ footer .about li{
 
     display: block;
 }
+.service_flow_diagram{
+    margin: 0 60px;
+}
+.service_flow_heading{
+    text-align: center;
+}
+.service_flow_diagram{
+    position: relative;
+    width: 100%;
+    height: 840px;
+}
+.diagram_card{
+    /* margin-top: 50px; */
+    width: fit-content;
+    height: 200px;
+    position: absolute;
+}
+.diagram_card:nth-of-type(1){
+    top: 40%;
+    left: 0;
+}
+.diagram_card:nth-of-type(2){
+    top: 10%;
+    left: 25%;
+
+}
+.diagram_card:nth-of-type(3){
+    top: 10%;
+    right: 25%;
+
+}
+.diagram_card:nth-of-type(4){
+    top: 40%;
+    right: 0;
+
+}
+.diagram_card_head{
+    position: relative;
+    padding-top: 20px;
+    background: var(--main-gradient);
+    width: 180px;
+    height: 120px;
+    border-radius: 15px;
+    padding: 10px 25px 10px 25px;
+    transition: 0.25s;
+    transform: translateX(15px) translateY(-25px);
+    box-shadow: -5px 5px 50px 1px #333;
+    z-index: 2;
+}
+.diagram_card_list{
+    margin:0;
+    padding: 0;
+}
+.diagram_card_task::before{
+    content:'- '
+}
+.diagram_card_task{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+.diagram_card_body{
+    position: relative;
+    background-color: #fff;
+    color:gray;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 110px 20px 30px 20px;
+    transform: translateX(-10px) translateY(-110px);
+    z-index: 1;
+    transition: 0.25s;
+    box-shadow: -5px 5px 50px 1px #333;
+}
+
+.diagram_card_stage{
+    font-size: 16px;
+    transition:0.25s;
+    color: var(--second-blue);
+    font-weight: 600;
+}
+
+.diagram_card_icon{
+    margin-right: 10px;
+}
+
+.diagram_device{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom:120px
+}
+.diagram_device_content{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.diagram_device_phone{
+    position: absolute;
+    bottom:-40px;
+    right: 45px;
+}
+.diagram_circle{
+    position: absolute;
+    top: 20%;
+    bottom: 19%;
+    left: 17%;
+    right: 17%;
+    border-radius: 50%;
+    border:4px dashed #fff;
+    z-index: -1;
+    transform: scaleY(-1);
+}
+
+.case_title{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.case_description::before{
+    content:'-';
+    margin-right: 20px;
+}
+.case_title span{
+    color: var(--main-yellow)
+}
+.case_description{
+    font-size: 16px;
+}
+.case_view{
+    text-align: center;
+    padding-top: 40px;
+}
+.case_img{
+    position: relative;
+    margin-bottom: 20px;
+}
+.case_img_shape{
+    height: 190px;
+}
+.case_img_content{
+    transform: translate(-50%);
+    position: absolute;
+    height: 165px;
+    top: 15px;
+    left: 50%;
+    z-index: -1;
+}
+.case_img_phone{
+    height: 250px;
+}
+.case_link{
+    color:var(--second-blue);
+    font-size: 20px;
+    font-weight: 700;
+}
+
 @media (max-width: 1200px){
     .catalog_page_buttons{
         margin-left: auto;
     }
 }
+
+@media (max-width: 1200px){
+    .diagram_device{
+        bottom:80px;
+    }
+    .diagram_device img{
+        transform: scale(0.8);
+    }
+    img.diagram_device_content{
+        transform: translate(-50%) scale(0.8);
+    }
+    .diagram_device_phone{
+        bottom: -15px;
+        right: 80px;
+    }
+    .diagram_card:nth-of-type(2){
+        left:23%;
+    }
+    .diagram_card:nth-of-type(3){
+        right:23%;
+    }
+}
+
+@media (max-width: 991px){
+    .service_flow_diagram{
+        height: 500px;
+    }
+    .diagram_device{
+        display: none;
+    }
+    .diagram_card:nth-of-type(1){
+        top: 65%;
+    }
+    .diagram_card:nth-of-type(2){
+        top: 10%;
+        left:10%;
+    }
+    .diagram_card:nth-of-type(3){
+        top: 10%;
+        right:10%;
+    }
+    .diagram_card:nth-of-type(4){
+        top: 65%;
+    }
+    .diagram_circle{
+        top: 20%;
+        bottom: 10%;
+        left: 15%;
+        right: 15%;
+    }
+}
+
 @media (max-width: 767px){
     .progs_catalog_body{
         height: 670px;
