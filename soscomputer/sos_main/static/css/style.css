@@ -1,14 +1,17 @@
 /* fonts */
 @font-face{
     font-family: Raleway;
+    font-display: fullback;
     src: url(../fonts/Raleway-Regular.ttf);
 }
 @font-face{
     font-family: Raleway-Black;
+    font-display: fullback;
     src: url(../fonts/Raleway-Black.ttf);
 }
 @font-face{
     font-family: Roboto;
+    font-display: fullback;
     src: url(../fonts/Roboto-Regular.ttf);
 }
 /* spicify */

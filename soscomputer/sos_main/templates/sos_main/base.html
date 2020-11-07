@@ -23,18 +23,19 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'animate.css-main/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'animate.css-main/animate.min.css' %}">
 
 
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.js' %}"></script>
 
 </head>
 
 <body class="preloader_body">
     {% block content %}
     {% endblock %}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.min.js' %}"></script>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <script>
         new WOW().init();

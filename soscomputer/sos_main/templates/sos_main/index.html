@@ -439,59 +439,8 @@
 </section>
 <!-- </div> -->
 
-<footer class="wow d-none d-md-block animate__fadeInDown" data-wow-duration="2s" data-wow-delay="" data-wow-offset="10"
-    data-wow-iteration="1">
-    <div class="container">
-        <hr style="background-color: #513b7e;">
-        <div class="row justify-content-between">
-            <div class="col-2">
-                <p class="team">Команда</p>
-                <img src="{% static 'img/logo.svg' %}" alt="logo">
-                <p class="age">1999-2020</p>
-            </div>
-            <div class="col-2 offset-2">
-                <p class="footer_headings">О нас</p>
-                <ul class="about">
-                    <li>Главная</li>
-                    <li>Контакты</li>
-                    <li><a href="#">Скачать прайс</a></li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <p class="footer_headings">Услуги</p>
-                <ul class="about">
-                    <li>Для детей</li>
-                    <li>Для взрослых</li>
-                    <li>Разработка сайтов</li>
-                    <li>Приложения</li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <p class="footer_headings">График работы</p>
-                <ul class="about">
-                    <li>Пн-Пт</li>
-                    <li>9:00-19:00</li>
-                    <li>Сб-Вс</li>
-                    <li>9:00-18:00</li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <p class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="language" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        English
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="language">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+{% include 'sos_main/footer.html' %}
+
 <div class="modal_form">
     <form class="form_modal" action="#">
         <div class="form_modal_logo">
