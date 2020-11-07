@@ -25,14 +25,13 @@ SECRET_KEY = 'ioxmpx3imjk^*^b^rq0%7=2faloj&s1ik1d+@@y8nl=*u#zo_c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+PREPEND_WWW = True
+
+
+
 ALLOWED_HOSTS = [
-    '85680d651617.ngrok.io',
-    '127.0.0.1',
-    '192.168.0.101',
-    '0.0.0.0',
     'sos-computer.site',
     'www.sos-computer.site',
-    '*'
 ]
 
 
@@ -132,7 +131,6 @@ EMAIL_PORT = 587
 
 EMAIL_USE_TLS = True
 
-PREPEND_WWW = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

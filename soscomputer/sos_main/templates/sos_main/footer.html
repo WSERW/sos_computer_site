@@ -1,3 +1,4 @@
+{% load static %}
 <footer class="wow d-none d-md-block animate__fadeInDown" data-wow-duration="2s" data-wow-delay="" data-wow-offset="10"
     data-wow-iteration="1">
     <div class="container">
@@ -11,18 +12,18 @@
             <div class="col-2 offset-2">
                 <p class="footer_headings">О нас</p>
                 <ul class="about">
-                    <li>Главная</li>
-                    <li>Контакты</li>
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                     <li><a href="#">Скачать прайс</a></li>
                 </ul>
             </div>
             <div class="col-2">
                 <p class="footer_headings">Услуги</p>
                 <ul class="about">
-                    <li>Для детей</li>
-                    <li>Для взрослых</li>
-                    <li>Разработка сайтов</li>
-                    <li>Приложения</li>
+                    <li><a href="{% url 'course' %}#mature">Для детей</a></li>
+                    <li><a href="{% url 'course' %}#mature">взрослых</a></li>
+                    <li><a href="{% url 'services' %}">Разработка сайтов</a></li>
+                    <li><a href="{% url 'services' %}">Приложения</a></li>
                 </ul>
             </div>
             <div class="col-2">

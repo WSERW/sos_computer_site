@@ -1,237 +1,281 @@
 {% extends 'sos_main/base.html' %}
 {% load static %}
 {% block meta %}
-    <title>Наши курсы | Сос Компьютер | Компьютерные курсы</title>
-    <link rel="canonical" href="https://sos-computer.site/">
-    <meta name="description" content="У нас вы можете обучиться по таким направлениям: веб-дизайн, SEO, SMM, front-end, android, python, 3dS Max, AutoCAD">
-    <meta name="Keywords" content="курсы 3д, курсы веб дизайна, компьютерные курсы, курсы андроид, курсы пайтон, курсы питон, курсы программирования,курс javascript,дизайн интерьера 3d, 3d дизайн,курсы автокад, Сос Компьютер, сос компьютер, sos computer, SOS computer,веб дизайн, фронтенд, бекенд, маркетинг, таргеттинг, таргет, растровая графика, векторная графика, ui, ux, фигма, figma, AutoCAD, 3ds Max, Android, Java, C++, Компьютерная академия, компьютерные курсы для детей, обучение детей, компьютерные курсы донецк, веб дизайн, фронтенд, бекенд, маркетинг, таргеттинг, таргет, растровая графика, векторная графика, ui, ux, фигма, figma, AutoCAD, 3ds Max, Android,Java, C++">
+<title>Наши курсы | Сос Компьютер | Компьютерные курсы</title>
+<link rel="canonical" href="https://sos-computer.site/">
+<meta name="description"
+    content="У нас вы можете обучиться по таким направлениям: веб-дизайн, SEO, SMM, front-end, android, python, 3dS Max, AutoCAD">
+<meta name="Keywords"
+    content="курсы 3д, курсы веб дизайна, компьютерные курсы, курсы андроид, курсы пайтон, курсы питон, курсы программирования,курс javascript,дизайн интерьера 3d, 3d дизайн,курсы автокад, Сос Компьютер, сос компьютер, sos computer, SOS computer,веб дизайн, фронтенд, бекенд, маркетинг, таргеттинг, таргет, растровая графика, векторная графика, ui, ux, фигма, figma, AutoCAD, 3ds Max, Android, Java, C++, Компьютерная академия, компьютерные курсы для детей, обучение детей, компьютерные курсы донецк, веб дизайн, фронтенд, бекенд, маркетинг, таргеттинг, таргет, растровая графика, векторная графика, ui, ux, фигма, figma, AutoCAD, 3ds Max, Android,Java, C++">
 {% endblock %}
 {% block content %}
-    <div class="preloader">
-        <div class="preloader_icon A">SOS<br>COMPUTER</div>
-        <div class="preloader_icon B">ACADEMY</div>
+<div class="preloader">
+    <div class="preloader_icon A">SOS<br>COMPUTER</div>
+    <div class="preloader_icon B">ACADEMY</div>
 
-    </div>
-    <main>
-        <header>
-            {% include 'sos_main/navbar.html' %}
-            <div class="container" style="position: relative;z-index: 1030;">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="header_text">
-                            <h1 class="wow text-main course_main_text animate__lightSpeedInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">Выбери свой курс<br>среди&nbsp;<span class="brand-name">самых&nbsp;актуальных</span> направлений</h1>
-                            <p class="wow d-none d-lg-block animate__lightSpeedInLeft" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-offset="10" data-wow-iteration="1" style="letter-spacing: 2px; font-family:'Roboto'; font-weight: 300;">Подберите для себя наиболее привлекательный вариант. Скачайте все программы. Посмотрите достоинства каждого курса.</p>
-                            <ul class="wow header_list flex-column flex-lg-row animate__lightSpeedInLeft" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-offset="10" data-wow-iteration="1">
-                                <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="image"> Без опыта и знания</li>
-                                <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="image"> Свой график</li>
-                                <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="image"> Личный педагог</li>
+</div>
+<main>
+    <header>
+        {% include 'sos_main/navbar.html' %}
+        <div class="container" style="position: relative;z-index: 1030;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="header_text">
+                        <h1 class="wow text-main course_main_text animate__lightSpeedInLeft" data-wow-duration="2s"
+                            data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">Выбери свой
+                            курс<br>среди&nbsp;<span class="brand-name">самых&nbsp;актуальных</span> направлений</h1>
+                        <p class="wow d-none d-lg-block animate__lightSpeedInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.3s" data-wow-offset="10" data-wow-iteration="1"
+                            style="letter-spacing: 2px; font-family:'Roboto'; font-weight: 300;">Подберите для себя
+                            наиболее привлекательный вариант. Скачайте все программы. Посмотрите достоинства каждого
+                            курса.</p>
+                        <ul class="wow header_list flex-column flex-lg-row animate__lightSpeedInLeft"
+                            data-wow-duration="2s" data-wow-delay="0.6s" data-wow-offset="10" data-wow-iteration="1">
+                            <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="image"> Без опыта и
+                                знания</li>
+                            <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="image"> Свой график</li>
+                            <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="image"> Личный педагог
+                            </li>
+                        </ul>
+                        <div class="wow btn_block d-flex d-md-block animate__lightSpeedInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.9s" data-wow-offset="10" data-wow-iteration="1">
+                            <button class="call mr-4">Заказать звонок</button>
+                            <a class="outline_btn" href="#mature">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+        <div class="wow particles animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-offset="10"
+            data-wow-iteration="1">
+            <img src="{% static 'img/blop (3).png' %}" alt="image" class="blop d-none d-lg-block course_blop"
+                id="blop3">
+            <img src="{% static 'img/blop (2).png' %}" alt="image" class="blop d-none d-lg-block" id="blop4">
+            <img src="{% static 'img/blop (3).png' %}" alt="image" class="blop d-none d-lg-block course_blop"
+                id="blop5">
+            <!-- <div class="plus" id="plus1"></div> -->
+            <!-- <div class="plus" id="plus2"></div> -->
+            <!-- <div class="plus" id="plus3"></div> -->
+            <div class="plus" id="plus4"></div>
+            <div class="plus" id="plus5"></div>
+            <!-- <div class="plus" id="plus6"></div> -->
+        </div>
+        <img src="{% static 'img/brauzer.png' %}" alt="brauser"
+            class="wow brauser d-none d-lg-block animate__lightSpeedInRight" data-wow-duration="2s" data-wow-delay="0"
+            data-wow-offset="10" data-wow-iteration="1">
+        <img src="{% static 'img/big_blop2.png' %}" alt="~"
+            class="wow blop course_blop d-none d-lg-block animate__fadeIn" data-wow-duration="2s" data-wow-delay="0"
+            data-wow-offset="10" data-wow-iteration="1">
+        <img src="{% static 'img/oblako.png' %}" alt="image" class="wow oblako d-none d-lg-block animate__fadeIn"
+            data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
+        <img src="{% static 'img/sidenie.png' %}" alt="grass" class="wow grass d-none d-lg-block animate__fadeIn"
+            data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
+        <img src="{% static 'img/banshi2.png' %}" alt="hi"
+            class="wow laptop_girl girl2 d-none d-lg-block animate__jackInTheBox" data-wow-duration="2s"
+            data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
+    </header>
+    <section class="course_knowlege">
+        <div class="container">
+            <div class="wow row animate__fadeIn" data-wow-duration="5s" data-wow-delay="0" data-wow-offset="10"
+                data-wow-iteration="1">
+                <div class='lines'>
+                    <img src="{% static 'img/monitor.png' %}" alt="image" class="monitor">
+                </div>
+                <h2 class="knowlege_heading">Наши направления</h2>
+            </div>
+            <div class="row">
+                <div class="wow col-lg-4 animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0"
+                    data-wow-offset="10" data-wow-iteration="1">
+                    <div class="knowlege mx-auto">
+                        <div class="knowlege_card">
+                            <img src="{% static 'img/course_vars_1.png' %}" alt="image" class="knowlege_card_img">
+                        </div>
+                        <div class="knowlege_text">
+                            <h3 class="knowlege_text_label">Графика и дизайн</h3>
+                            <ul class="knowlage_course_list">
+                                <li class="knowlege_course_item">Растровая графика</li>
+                                <li class="knowlege_course_item">Векторная графика</li>
+                                <li class="knowlege_course_item">Веб-дизайн</li>
+                                <li class="knowlege_course_item">Сайты</li>
+                                <li class="knowlege_course_item">Приложения</li>
+                                <li class="knowlege_course_item">Брендинг</li>
+                                <li class="knowlege_course_item">UI/UX</li>
+                                <li class="knowlege_course_item">3d моделирование</li>
+                                <li class="knowlege_course_item">Цифровой рисунок</li>
+                                <li class="knowlege_course_item">Скетчинг</li>
                             </ul>
-                            <div class="wow btn_block d-flex d-md-block animate__lightSpeedInLeft" data-wow-duration="2s" data-wow-delay="0.9s" data-wow-offset="10" data-wow-iteration="1">
-                                <button class="call mr-4">Заказать звонок</button>
-                                <a class="outline_btn" href="#mature">Подробнее</a>
-                            </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <!--  -->
                     </div>
                 </div>
-            </div>
-            <div class="wow particles animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-offset="10" data-wow-iteration="1">
-                <img src="{% static 'img/blop (3).png' %}" alt="image" class="blop d-none d-lg-block course_blop" id="blop3">
-                <img src="{% static 'img/blop (2).png' %}" alt="image" class="blop d-none d-lg-block" id="blop4">
-                <img src="{% static 'img/blop (3).png' %}" alt="image" class="blop d-none d-lg-block course_blop" id="blop5">
-                <!-- <div class="plus" id="plus1"></div> -->
-                <!-- <div class="plus" id="plus2"></div> -->
-                <!-- <div class="plus" id="plus3"></div> -->
-                <div class="plus" id="plus4"></div>
-                <div class="plus" id="plus5"></div>
-                <!-- <div class="plus" id="plus6"></div> -->
-            </div>
-            <img src="{% static 'img/brauzer.png' %}" alt="brauser" class="wow brauser d-none d-lg-block animate__lightSpeedInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-            <img src="{% static 'img/big_blop2.png' %}" alt="~" class="wow blop course_blop d-none d-lg-block animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-            <img src="{% static 'img/oblako.png' %}" alt="image" class="wow oblako d-none d-lg-block animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-            <img src="{% static 'img/sidenie.png' %}" alt="grass" class="wow grass d-none d-lg-block animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-            <img src="{% static 'img/banshi2.png' %}" alt="hi" class="wow laptop_girl girl2 d-none d-lg-block animate__jackInTheBox" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-        </header>
-        <section class="course_knowlege">
-            <div class="container">
-                <div class="wow row animate__fadeIn" data-wow-duration="5s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                    <div class='lines'>
-                        <img src="{% static 'img/monitor.png' %}" alt="image" class="monitor">
+                <div class="wow col-lg-4 animate__flipInY" data-wow-duration="2s" data-wow-delay="0"
+                    data-wow-offset="10" data-wow-iteration="1">
+                    <div class="knowlege mx-auto">
+                        <div class="knowlege_card">
+                            <img src="{% static 'img/course_vars_2.png' %}" alt="image" class="knowlege_card_img">
+                        </div>
+                        <div class="knowlege_text">
+                            <h3 class="knowlege_text_label">Программирование</h3>
+                            <ul class="knowlage_course_list">
+                                <li class="knowlege_course_item">Front-end</li>
+                                <li class="knowlege_course_item">Back-end</li>
+                                <li class="knowlege_course_item">Python 3</li>
+                                <li class="knowlege_course_item">HTML 5</li>
+                                <li class="knowlege_course_item">CSS 3</li>
+                                <li class="knowlege_course_item">JavaScript ES6+</li>
+                                <li class="knowlege_course_item">PHP 7</li>
+                                <li class="knowlege_course_item">Android разработка</li>
+                                <li class="knowlege_course_item">C++</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h2 class="knowlege_heading">Наши направления</h2>
                 </div>
-                <div class="row">
-                    <div class="wow col-lg-4 animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                        <div class="knowlege mx-auto">
-                            <div class="knowlege_card">
-                                <img src="{% static 'img/course_vars_1.png' %}" alt="image" class="knowlege_card_img">
-                            </div>
-                            <div class="knowlege_text">
-                                <h3 class="knowlege_text_label">Графика и дизайн</h3>
-                                <ul class="knowlage_course_list">
-                                    <li class="knowlege_course_item">Растровая графика</li>
-                                    <li class="knowlege_course_item">Векторная графика</li>
-                                    <li class="knowlege_course_item">Веб-дизайн</li>
-                                    <li class="knowlege_course_item">Сайты</li>
-                                    <li class="knowlege_course_item">Приложения</li>
-                                    <li class="knowlege_course_item">Брендинг</li>
-                                    <li class="knowlege_course_item">UI/UX</li>
-                                    <li class="knowlege_course_item">3d моделирование</li>
-                                    <li class="knowlege_course_item">Цифровой рисунок</li>
-                                    <li class="knowlege_course_item">Скетчинг</li>
-                                </ul>
-                            </div>
+                <div class="wow col-lg-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0"
+                    data-wow-offset="10" data-wow-iteration="1">
+                    <div class="knowlege mx-auto">
+                        <div class="knowlege_card">
+                            <img src="{% static 'img/course_vars_3.png' %}" alt="image" class="knowlege_card_img">
                         </div>
-                    </div>
-                    <div class="wow col-lg-4 animate__flipInY" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                        <div class="knowlege mx-auto">
-                            <div class="knowlege_card">
-                                <img src="{% static 'img/course_vars_2.png' %}" alt="image" class="knowlege_card_img">
-                            </div>
-                            <div class="knowlege_text">
-                                <h3 class="knowlege_text_label">Программирование</h3>
-                                <ul class="knowlage_course_list">
-                                    <li class="knowlege_course_item">Front-end</li>
-                                    <li class="knowlege_course_item">Back-end</li>
-                                    <li class="knowlege_course_item">Python 3</li>
-                                    <li class="knowlege_course_item">HTML 5</li>
-                                    <li class="knowlege_course_item">CSS 3</li>
-                                    <li class="knowlege_course_item">JavaScript ES6+</li>
-                                    <li class="knowlege_course_item">PHP 7</li>
-                                    <li class="knowlege_course_item">Android разработка</li>
-                                    <li class="knowlege_course_item">C++</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wow col-lg-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                        <div class="knowlege mx-auto">
-                            <div class="knowlege_card">
-                                <img src="{% static 'img/course_vars_3.png' %}" alt="image" class="knowlege_card_img">
-                            </div>
-                            <div class="knowlege_text">
-                                <h3 class="knowlege_text_label">Маркетинг, SEO, SMM</h3>
-                                <ul class="knowlage_course_list">
-                                    <li class="knowlege_course_item">Маркетинг</li>
-                                    <li class="knowlege_course_item">SEO и SMM</li>
-                                    <li class="knowlege_course_item">Фин. грамотность</li>
-                                    <li class="knowlege_course_item">Фондовые рынки</li>
-                                    <li class="knowlege_course_item">HR рекрутинг</li>
-                                    <li class="knowlege_course_item">Открытие своего дела</li>
-                                    <li class="knowlege_course_item">Менеджмент</li>
-                                    <li class="knowlege_course_item">BA и PM</li>
-                                </ul>
-                            </div>
+                        <div class="knowlege_text">
+                            <h3 class="knowlege_text_label">Маркетинг, SEO, SMM</h3>
+                            <ul class="knowlage_course_list">
+                                <li class="knowlege_course_item">Маркетинг</li>
+                                <li class="knowlege_course_item">SEO и SMM</li>
+                                <li class="knowlege_course_item">Фин. грамотность</li>
+                                <li class="knowlege_course_item">Фондовые рынки</li>
+                                <li class="knowlege_course_item">HR рекрутинг</li>
+                                <li class="knowlege_course_item">Открытие своего дела</li>
+                                <li class="knowlege_course_item">Менеджмент</li>
+                                <li class="knowlege_course_item">BA и PM</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-         <section class="progs_catalog  d-lg-block"><!-- d-none -->
-            <div class="container">
-                <div class="row" >
-                    <div class="col-12">
-                        <div class="progs_catalog_body"  >
-                            <div class="catalog_arrow" id="first_arrow" >
-                                <span class="arrow_descript">Выберите возраст здесь</span>
-                            </div>
-                            <div class="catalog_arrow" id="second_arrow">
+        </div>
+    </section>
+    <section class="progs_catalog  d-lg-block">
+        <!-- d-none -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="progs_catalog_body">
+                        <div class="catalog_arrow" id="first_arrow">
+                            <span class="arrow_descript">Выберите возраст здесь</span>
+                        </div>
+                        <div class="catalog_arrow" id="second_arrow">
 
-                            </div>
-                            <div class="catalog_arrow" id="third_arrow">
-                                <span class="arrow_descript">Разделы знаний тут</span>
-                            </div>
+                        </div>
+                        <div class="catalog_arrow" id="third_arrow">
+                            <span class="arrow_descript">Разделы знаний тут</span>
+                        </div>
 
-                            <div class="catalog_label_way" id="progr">
-                                <img  class="way_label_img" src="{% static 'img/course_vars_1.png' %}" alt="image" height="100">
-                                <h3 class="way_label_text">Прогр.</h3>
-                            </div>
-                            <div class="catalog_label_way" id="design">
-                                <img class="way_label_img" src="{% static 'img/course_vars_2.png' %}" alt="image" height="100">
-                                <h3 class="way_label_text">Дизайн</h3>
-                            </div>
-                            <div class="catalog_label_way" id="market">
-                                <img class="way_label_img" src="{% static 'img/course_vars_3.png' %}" alt="image" height="100">
-                                <h3 class="way_label_text">Маркетинг</h3>
-                            </div>
-                            <div class="catalog_label_age" id="mature">Взрослые курсы</div>
-                            <div class="catalog_label_age" id="child">Детские курсы</div>
-                            <img src="{% static 'img/catalog_boy.svg' %}" alt="catalog_boy" class="catalog_boy">
-                            <img src="{% static 'img/last_supper.png' %}" alt="last_supper" class="last_supper">
-                            <div class="catalog_content">
-                                <h2 class="catalog_course_title">Выберите направление</h2>
-                                <h4 class="catalog_course_subtitle"></h4>
-                                <div class="catalog_course_text"></div>
-                                <ul class="catalog_course_list">
-                                    <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">Свой перподаватель</li>
-                                    <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">1 - 1,5 месяца</li>
-                                    <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">2 - 3 раза в неделю</li>
-                                    <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">Скачать программу</li>
-                                </ul>
-                                <div class="catalog_course_hud">
-                                    <button class="catalog_enroll_button">Записаться</button>
-                                    <div class="catalog_page_buttons">
-                                        <button class="catalog_page_button" id="page1">1</button>
-                                        <button class="catalog_page_button" id="page2">2</button>
-                                        <button class="catalog_page_button" id="page3">3</button>
-                                    </div>
+                        <div class="catalog_label_way" id="progr">
+                            <img class="way_label_img" src="{% static 'img/course_vars_1.png' %}" alt="image"
+                                height="100">
+                            <h3 class="way_label_text">Прогр.</h3>
+                        </div>
+                        <div class="catalog_label_way" id="design">
+                            <img class="way_label_img" src="{% static 'img/course_vars_2.png' %}" alt="image"
+                                height="100">
+                            <h3 class="way_label_text">Дизайн</h3>
+                        </div>
+                        <div class="catalog_label_way" id="market">
+                            <img class="way_label_img" src="{% static 'img/course_vars_3.png' %}" alt="image"
+                                height="100">
+                            <h3 class="way_label_text">Маркетинг</h3>
+                        </div>
+                        <div class="catalog_label_age" id="mature">Взрослые курсы</div>
+                        <div class="catalog_label_age" id="child">Детские курсы</div>
+                        <img src="{% static 'img/catalog_boy.svg' %}" alt="catalog_boy" class="catalog_boy">
+                        <img src="{% static 'img/last_supper.png' %}" alt="last_supper" class="last_supper">
+                        <div class="catalog_content">
+                            <h2 class="catalog_course_title">Выберите направление</h2>
+                            <h4 class="catalog_course_subtitle"></h4>
+                            <div class="catalog_course_text"></div>
+                            <ul class="catalog_course_list">
+                                <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">Свой
+                                    перподаватель</li>
+                                <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">1 - 1,5
+                                    месяца</li>
+                                <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">2 - 3
+                                    раза в неделю</li>
+                                <li class="catalog_course_detail"><img src="{% static 'img/star.png' %}" alt="*">Скачать
+                                    программу</li>
+                            </ul>
+                            <div class="catalog_course_hud">
+                                <button class="catalog_enroll_button">Записаться</button>
+                                <div class="catalog_page_buttons">
+                                    <button class="catalog_page_button" id="page1">1</button>
+                                    <button class="catalog_page_button" id="page2">2</button>
+                                    <button class="catalog_page_button" id="page3">3</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="progs">
-            <div class="container">
-                <div class="wow row animate__fadeIn" data-wow-duration="5s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                    <div class='lines'>
-                        <img src="{% static 'img/monitor.png' %}" alt="image" class="monitor">
-                    </div>
-                    <h2 class="course_heading">Стационар и онлайн обучение</h2>
+        </div>
+    </section>
+    <section class="progs">
+        <div class="container">
+            <div class="wow row animate__fadeIn" data-wow-duration="5s" data-wow-delay="0" data-wow-offset="10"
+                data-wow-iteration="1">
+                <div class='lines'>
+                    <img src="{% static 'img/monitor.png' %}" alt="image" class="monitor">
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 d-flex justify-content-center wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                        <div class="course">
-                            <div class="course_card">
-                                <img src="{% static 'img/boy_course.png' %}" alt="image" class="course_card_img">
-                                <a href="#mature" class="course_card_link">Смотреть курсы</a>
-                            </div>
-                            <div class="course_text">
-                                <h3 class="course_text_label">Стационар</h3>
-                                <p class="course_text_age"><img class="course_text_icon" src="{% static 'img/user-blue.png' %}" alt="image">От 6 до 80+ лет.</х>
-                                <p class="course_text_duration"><img class="course_text_icon" src="{% static 'img/clock-blue.png' %}" alt="image">1,5 мес. - 1 год 3 мес.</p>
-                            </div>
+                <h2 class="course_heading">Стационар и онлайн обучение</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center wow animate__fadeInLeft" data-wow-duration="2s"
+                    data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
+                    <div class="course">
+                        <div class="course_card">
+                            <img src="{% static 'img/boy_course.png' %}" alt="image" class="course_card_img">
+                            <a href="#mature" class="course_card_link">Смотреть курсы</a>
                         </div>
-                    </div>
-                    <div class=" col-lg-6 d-flex justify-content-center wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                        <div class="course">
-                            <div class="course_card">
-                                <img src="{% static 'img/girl_course.png' %}" alt="image" class="course_card_img">
-                                <a href="#mature" class="course_card_link">Смотреть курсы</a>
-                            </div>
-                            <div class="course_text">
-                                <h3 class="course_text_label">Онлайн</h3>
-                                <p class="course_text_age"><img class="course_text_icon" src="{% static 'img/user-blue.png' %}" alt="image">С 6 до 80+ лет.</p>
-                                <p class="course_text_duration"><img class="course_text_icon" src="{% static 'img/clock-blue.png' %}" alt="image">1,5 - 6 мес.</p>
-                            </div>
+                        <div class="course_text">
+                            <h3 class="course_text_label">Стационар</h3>
+                            <p class="course_text_age"><img class="course_text_icon"
+                                    src="{% static 'img/user-blue.png' %}" alt="image">От 6 до 80+ лет.</х>
+                                <p class="course_text_duration"><img class="course_text_icon"
+                                        src="{% static 'img/clock-blue.png' %}" alt="image">1,5 мес. - 1 год 3 мес.</p>
                         </div>
                     </div>
                 </div>
-                <div class="course_blops">
-                    <img src="{% static 'img/blop (2).png' %}" alt="image" class="course_blop blop2">
-                    <img src="{% static 'img/planet-blue.png' %}" alt="image" class="course_blop planet">
+                <div class=" col-lg-6 d-flex justify-content-center wow animate__fadeInRight" data-wow-duration="2s"
+                    data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
+                    <div class="course">
+                        <div class="course_card">
+                            <img src="{% static 'img/girl_course.png' %}" alt="image" class="course_card_img">
+                            <a href="#mature" class="course_card_link">Смотреть курсы</a>
+                        </div>
+                        <div class="course_text">
+                            <h3 class="course_text_label">Онлайн</h3>
+                            <p class="course_text_age"><img class="course_text_icon"
+                                    src="{% static 'img/user-blue.png' %}" alt="image">С 6 до 80+ лет.</p>
+                            <p class="course_text_duration"><img class="course_text_icon"
+                                    src="{% static 'img/clock-blue.png' %}" alt="image">1,5 - 6 мес.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
-            <section class="wow petruska animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10" data-wow-iteration="1">
-                <canvas id="cnv" height='500' width='1700'></canvas>
+            <div class="course_blops">
+                <img src="{% static 'img/blop (2).png' %}" alt="image" class="course_blop blop2">
+                <img src="{% static 'img/planet-blue.png' %}" alt="image" class="course_blop planet">
+            </div>
+        </div>
+
+        <section class="wow petruska animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-offset="10"
+            data-wow-iteration="1">
+            <canvas id="cnv" height='500' width='1700'></canvas>
         </section>
-                <section class="faq">
+        <section class="faq">
             <div class="container">
-                <div class="wow row animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
+                <div class="wow row animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1"
+                    data-wow-distanse="10">
                     <div class='lines'>
                         <img src="{% static 'img/monitor.png' %}" alt="image" class="monitor">
                     </div>
@@ -244,7 +288,10 @@
                                 - Какие у вас есть формы обучения?
                             </div>
                             <div class="faq_card_body">
-                                Вы можете выбрать один из наших многочисленных офисов, либо взять своего преподавателя в скайпе или дискорде. Качество образования одинаково в обоих случаях, все темы изучаются до полного усвоения учеником. Практика прорабатывается для получения навыков, необходимых при работе в крупных компаниях.
+                                Вы можете выбрать один из наших многочисленных офисов, либо взять своего преподавателя в
+                                скайпе или дискорде. Качество образования одинаково в обоих случаях, все темы изучаются
+                                до полного усвоения учеником. Практика прорабатывается для получения навыков,
+                                необходимых при работе в крупных компаниях.
                             </div>
                         </div>
                         <div class="faq_card" data-open="false">
@@ -252,7 +299,10 @@
                                 - Сколько длятся курсы?
                             </div>
                             <div class="faq_card_body">
-                                Каждый курс имеет разную продолжительность. Курсы для детей занимают 1,3 - 1,5 года. Взрослые направления обычно занимают от 2 до 6 месяцев, со своим преподавателем. Некоторые сложные дисциплины требуют освоения двух курсов, например fullstack программирование.
+                                Каждый курс имеет разную продолжительность. Курсы для детей занимают 1,3 - 1,5 года.
+                                Взрослые направления обычно занимают от 2 до 6 месяцев, со своим преподавателем.
+                                Некоторые сложные дисциплины требуют освоения двух курсов, например fullstack
+                                программирование.
                             </div>
                         </div>
                         <div class="faq_card" data-open="false">
@@ -260,7 +310,9 @@
                                 - Как узнать стоимость обучения по каждому курсу?
                             </div>
                             <div class="faq_card_body">
-                                Поскольку мы представлены в разных городах, стоимость немного отличается для каждого случая. Пожалуйста, позвоните нам, либо воспользуйтесь удобной социальной сетью, чтобы узнать актуальные цены на любой из наших курсов.
+                                Поскольку мы представлены в разных городах, стоимость немного отличается для каждого
+                                случая. Пожалуйста, позвоните нам, либо воспользуйтесь удобной социальной сетью, чтобы
+                                узнать актуальные цены на любой из наших курсов.
                             </div>
                         </div>
                         <div class="faq_card" data-open="false">
@@ -268,7 +320,11 @@
                                 - Какие есть варианты и способы оплаты?
                             </div>
                             <div class="faq_card_body">
-                                Вы можете оплатить несколькими способами. При посещении любого офиса, вы можете заключить договор обучения на месте и оплатить наличными. Если вы занимаетесь онлайн, вы можете оплатить курс в банке по предоставленным реквизитам. Также вы можете воспользоваться переводом денег на карту ПриватБанка или СберБанка, если другие варианты вам не подходят. Мы пересчитаем стоимость в удобную валюту, если вы живёте за рубежом.
+                                Вы можете оплатить несколькими способами. При посещении любого офиса, вы можете
+                                заключить договор обучения на месте и оплатить наличными. Если вы занимаетесь онлайн, вы
+                                можете оплатить курс в банке по предоставленным реквизитам. Также вы можете
+                                воспользоваться переводом денег на карту ПриватБанка или СберБанка, если другие варианты
+                                вам не подходят. Мы пересчитаем стоимость в удобную валюту, если вы живёте за рубежом.
                             </div>
                         </div>
                         <div class="faq_card" data-open="false">
@@ -276,7 +332,11 @@
                                 - Помогаете ли вы с трудоустройством?
                             </div>
                             <div class="faq_card_body">
-                                У нас есть большая база работодателей, а также часто появляются вакансии от партнёров. Некоторые успешные ученики проходят стажировку у нас и работают в качестве преподавателей в различных городах и онлайн. Если ни один из этих вариантов вам не подойдёт, мы поможем сформировать резюме и портфолио, чтобы достойно представить вас работодателям.
+                                У нас есть большая база работодателей, а также часто появляются вакансии от партнёров.
+                                Некоторые успешные ученики проходят стажировку у нас и работают в качестве
+                                преподавателей в различных городах и онлайн. Если ни один из этих вариантов вам не
+                                подойдёт, мы поможем сформировать резюме и портфолио, чтобы достойно представить вас
+                                работодателям.
                             </div>
                         </div>
                     </div>
@@ -286,80 +346,109 @@
                 </div>
             </div>
         </section>
-   </main>
-   <div id="contacts"></div>
-    <!-- <div class="paralax"> -->
-    <section class="contacts">
-        <div class="container">
-            <div class="row">
-                <div class="col-5 pt-4 d-none d-md-block">
-                    <form action="">
-                        <label for="" class="contacts_text wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
-                       Оставьте ваше имя:</label><br>
-                        <input type="text" placeholder="Имя..." class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10"><br>
-                        <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">Номер телефона:</label><br>
-                        <input type="text" placeholder="+380..." class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"><br>
-                        <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">Напишите нам:</label><br>
-                        <div class="comment wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                            <button class="send"><img src="{% static 'img/telegramm.png' %}" alt="image" class="send_icon"></button>
-                        </div>
-                        <div class="wow perc_right animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.9s" data-wow-iteration="1" data-wow-distanse="10">
-                            <input type="checkbox" id='persRight'>
-                            <label class="perc_right_label" for="persRight">Я даю согласие на обработку своих персональных данных согласно <a href="#" style='color:white;text-decoration: underline;'>правилам</a></label>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-md-6 offset-1">
-                    <canvas id='cnv2' height="500" class="wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-offset="10" data-wow-iteration="1"></canvas>
-                    <h3 class="wow contacts_heading mb-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">Контакты</h3>
-                    <img src="{% static 'img/nlo.png' %}" class="wow contacts_nlo animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
-                    <hr class="wow mb-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10" style='opacity: 0.5;'>
-                    <p class="wow contacts_text mb-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">Свяжитесь с нами самым удобным способом:</p>
-                    <p class="wow contacts_text mb-2 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">Телефон:</p>
-                    <div class="wow navbar_numbers mb-4 ml-0 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">
-                        <p><a href="tel:+380660836532"><img class="number_phone" src="{% static 'img/phone.png' %}" alt="image">095 - 462 - 46 - 72</a></p>
-                        <p><a href="tel:+380660836532"><img class="number_phone" src="{% static 'img/phone.png' %}" alt="image">071 - 405 - 68 - 46</a></p>
+</main>
+<div id="contacts"></div>
+<!-- <div class="paralax"> -->
+<section class="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 pt-4 d-none d-md-block">
+                <form action="">
+                    <label for="" class="contacts_text wow animate__fadeInLeft" data-wow-duration="2s"
+                        data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
+                        Оставьте ваше имя:</label><br>
+                    <input type="text" placeholder="Имя..." class="wow animate__fadeInLeft" data-wow-duration="2s"
+                        data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10"><br>
+                    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
+                        data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">Номер телефона:</label><br>
+                    <input type="text" placeholder="+380..." class="wow animate__fadeInLeft" data-wow-duration="2s"
+                        data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"><br>
+                    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
+                        data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">Напишите нам:</label><br>
+                    <div class="comment wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s"
+                        data-wow-iteration="1" data-wow-distanse="10">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                        <button class="send"><img src="{% static 'img/telegramm.png' %}" alt="image"
+                                class="send_icon"></button>
                     </div>
-                    <p class="wow contacts_text animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10" >Почта:</p>
-                    <p class="wow mb-3 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">sosca172@gmail.com</p>
-                    <p class="wow contacts_text animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10" >Следите за нами в соцсетях:</p>
-                    <div class="wow navbar_social mt-2 mb-4 ml-0 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.9s" data-wow-iteration="1" data-wow-distanse="10">
-                        <a href="https://vk.com/sos_computer_academy"target="_blank"><img src="{% static 'img/vk.svg' %}" alt="image"></a>
-                        <a href="https://www.instagram.com/computercourses_in_donetsk" target="_blank"><img src="{% static 'img/instagram.svg' %}" alt="image"></a>
-                        <a href="https://www.youtube.com/channel/UCQO8oYQ50PukJvvMgoGVl3w" target="_blank"><img src="{% static 'img/youtube.svg' %}"  alt="image"></a>
+                    <div class="wow perc_right animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.9s"
+                        data-wow-iteration="1" data-wow-distanse="10">
+                        <input type="checkbox" id='persRight'>
+                        <label class="perc_right_label" for="persRight">Я даю согласие на обработку своих персональных
+                            данных согласно <a href="#"
+                                style='color:white;text-decoration: underline;'>правилам</a></label>
                     </div>
-                    <button class="wow call mt-5 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.9s" data-wow-iteration="1" data-wow-distanse="10">Заказать звонок</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-6 offset-1">
+                <canvas id='cnv2' height="500" class="wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.3s"
+                    data-wow-offset="10" data-wow-iteration="1"></canvas>
+                <h3 class="wow contacts_heading mb-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0"
+                    data-wow-iteration="1" data-wow-distanse="10">Контакты</h3>
+                <img src="{% static 'img/nlo.png' %}" class="wow contacts_nlo animate__fadeInRight"
+                    data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
+                <hr class="wow mb-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0"
+                    data-wow-iteration="1" data-wow-distanse="10" style='opacity: 0.5;'>
+                <p class="wow contacts_text mb-4 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0"
+                    data-wow-iteration="1" data-wow-distanse="10">Свяжитесь с нами самым удобным способом:</p>
+                <p class="wow contacts_text mb-2 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s"
+                    data-wow-iteration="1" data-wow-distanse="10">Телефон:</p>
+                <div class="wow navbar_numbers mb-4 ml-0 animate__fadeInRight" data-wow-duration="2s"
+                    data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">
+                    <p><a href="tel:+380660836532"><img class="number_phone" src="{% static 'img/phone.png' %}"
+                                alt="image">095 - 462 - 46 - 72</a></p>
+                    <p><a href="tel:+380660836532"><img class="number_phone" src="{% static 'img/phone.png' %}"
+                                alt="image">071 - 405 - 68 - 46</a></p>
                 </div>
+                <p class="wow contacts_text animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s"
+                    data-wow-iteration="1" data-wow-distanse="10">Почта:</p>
+                <p class="wow mb-3 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s"
+                    data-wow-iteration="1" data-wow-distanse="10">sosca172@gmail.com</p>
+                <p class="wow contacts_text animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.6s"
+                    data-wow-iteration="1" data-wow-distanse="10">Следите за нами в соцсетях:</p>
+                <div class="wow navbar_social mt-2 mb-4 ml-0 animate__fadeInRight" data-wow-duration="2s"
+                    data-wow-delay="0.9s" data-wow-iteration="1" data-wow-distanse="10">
+                    <a href="https://vk.com/sos_computer_academy" target="_blank"><img src="{% static 'img/vk.svg' %}"
+                            alt="image"></a>
+                    <a href="https://www.instagram.com/computercourses_in_donetsk" target="_blank"><img
+                            src="{% static 'img/instagram.svg' %}" alt="image"></a>
+                    <a href="https://www.youtube.com/channel/UCQO8oYQ50PukJvvMgoGVl3w" target="_blank"><img
+                            src="{% static 'img/youtube.svg' %}" alt="image"></a>
+                </div>
+                <button class="wow call mt-5 animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0.9s"
+                    data-wow-iteration="1" data-wow-distanse="10">Заказать звонок</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 <!-- </div> -->
 
 {% include 'sos_main/footer.html' %}
 
-    <div class="modal_form">
-        <form class="form_modal" action="#">
-            <div class="form_modal_logo" >
-                <img src="{% static 'img/logo.png' %}" alt="image">
+<div class="modal_form">
+    <form class="form_modal" action="#">
+        <div class="form_modal_logo">
+            <img src="{% static 'img/logo.png' %}" alt="image">
+        </div>
+        <h3 class="form_modal_heading">Запишитесь к нам:</h3>
+        <label class="form_modal_label" for="">Ваше имя:</label>
+        <input type="text" class="form_modal_input" placeholder="Имя">
+        <label class="form_modal_label" for="">Телефон для связи:</label>
+        <input type="text" class="form_modal_input" placeholder="+380">
+        <label class="form_modal_label" for="">Страна, город:</label>
+        <input type="text" class="form_modal_input" placeholder="Страна, город">
+        <div class="form_modal_copyright">
+            <label for="" class="form_modal_label copyright">Хотите ли вы получить образовательный курс Online?</label>
+            <div class="from_modal_confirm">
+                <input type="checkbox" name="" id="copyryght_yes"><label for="copyryght_yes"
+                    class="form_modal_label">да</label><br>
+                <input type="checkbox" name="" id="copyryght_no"><label for="copyryght_no"
+                    class="form_modal_label">нет</label>
             </div>
-            <h3 class="form_modal_heading">Запишитесь к нам:</h3>
-            <label class="form_modal_label" for="">Ваше имя:</label>
-            <input type="text" class="form_modal_input" placeholder="Имя">
-            <label class="form_modal_label" for="">Телефон для связи:</label>
-            <input type="text" class="form_modal_input" placeholder="+380">
-            <label class="form_modal_label" for="">Страна, город:</label>
-            <input type="text" class="form_modal_input" placeholder="Страна, город">
-            <div class="form_modal_copyright">
-                <label for="" class="form_modal_label copyright">Хотите ли вы получить образовательный курс Online?</label>
-                <div class="from_modal_confirm">
-                    <input type="checkbox" name="" id="copyryght_yes"><label for="copyryght_yes" class="form_modal_label">да</label><br>
-                    <input type="checkbox" name="" id="copyryght_no"><label for="copyryght_no" class="form_modal_label">нет</label>
-                </div>
-            </div>
-            <button class="form_modal_btn">Заказать звонок</button>
-            <input type="checkbox" name="" id="copyryght_confirm" class='copyright_checkbox'>
-            <label for="copyryght_confirm" class="form_modal_label">Согласие на обработку данных</label>
-        </form>
-    </div>
+        </div>
+        <button class="form_modal_btn">Заказать звонок</button>
+        <input type="checkbox" name="" id="copyryght_confirm" class='copyright_checkbox'>
+        <label for="copyryght_confirm" class="form_modal_label">Согласие на обработку данных</label>
+    </form>
+</div>
 {% endblock %}

@@ -17,7 +17,6 @@
 <div class="preloader">
     <div class="preloader_icon A">SOS<br>COMPUTER</div>
     <div class="preloader_icon B">ACADEMY</div>
-
 </div>
 <main>
     <header>
@@ -27,9 +26,9 @@
                 <div class="col-lg-6">
                     <div class="header_text">
                         <h1 class="wow text-main animate__lightSpeedInLeft" data-wow-duration="2s" data-wow-delay="0"
-                            data-wow-iteration="1"
-                            data-wow-distanse="10">Создай свой лучший сайт или приложение<br><span class=" brand-name">
-                            вместе с нами</span></h1>
+                            data-wow-iteration="1" data-wow-distanse="10">Создай свой лучший сайт или
+                            приложение<br><span class=" brand-name">
+                                вместе с нами</span></h1>
                         <p class="wow d-none d-lg-block animate__lightSpeedInLeft" data-wow-duration="2s"
                             data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"
                             style="letter-spacing: 2px; font-family:'Roboto'; font-weight: 300;">Реализуем как шаблонный
@@ -44,7 +43,7 @@
                         <div class="wow btn_block d-flex d-md-block animate__lightSpeedInLeft" data-wow-duration="2s"
                             data-wow-delay="0.9" data-wow-iteration="1" data-wow-distanse="10">
                             <button class="call mr-2 mr-md-4 ">Заказать звонок</button>
-                            <a href="course.html#mature" class="outline_btn">Подробнее</a>
+                            <a href="#service" class="outline_btn">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -52,11 +51,13 @@
                 </div>
             </div>
         </div>
-        <div class="wow particles animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="1"
+        <div class="wow particles service_particles animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="1"
             data-wow-distanse="10">
-            <img src="{% static 'img/blop (2).png' %}" alt="image" class="blop d-none d-lg-block" id="blop2">
-            <img src="{% static 'img/blop (2).png' %}" alt="image" class="blop d-none d-lg-block" id="blop4">
-            <img src="{% static 'img/services/circule_blop.png' %}" alt="~" class="blop d-none d-lg-block"
+            <img src="{% static 'img/blop (2).png' %}" alt="image" class="blop services_blop d-none d-lg-block"
+                id="blop2">
+            <img src="{% static 'img/blop (2).png' %}" alt="image" class="blop services_blop d-none d-lg-block"
+                id="blop4">
+            <img src="{% static 'img/services/circule_blop.png' %}" alt="~" class="blop services_blop d-none d-lg-block"
                 id="circule_blop">
         </div>
         <img src="{% static 'img/services/phone_header.png' %}" alt="hi"
@@ -111,7 +112,7 @@
         </div>
     </section>
     <section class="wow service_flow d-none d-md-block animate__fadeInDown" data-wow-duration="2s" data-wow-delay="0"
-        data-wow-offset="10" data-wow-iteration="1">
+        data-wow-offset="10" data-wow-iteration="1" id="service">
         <div class="container">
             <div class="wow row animate__fadeIn" data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1"
                 data-wow-distanse="10">
@@ -141,13 +142,28 @@
                     <div class="diagram_card">
                         <div class="diagram_card_head">
                             <ul class="diagram_card_list">
-                                <li class="diagram_card_task">Составляем ТЗ</li>
-                                <li class="diagram_card_task">Устанавливаем цену и сроки</li>
-                                <li class="diagram_card_task">Анализируем рынок</li>
+                                <li class="diagram_card_task">Дизайн</li>
+                                <li class="diagram_card_task">Код</li>
+                                <li class="diagram_card_task">SEO и SMM</li>
                             </ul>
                         </div>
                         <div class="diagram_card_body">
-                            <h3 class="diagram_card_stage">Этап подготовки</h3>
+                            <h3 class="diagram_card_stage">Этап разработки</h3>
+                            <p class="diagram_card_duration"><img class="diagram_card_icon"
+                                    src="{% static 'img/clock-blue.png' %}" alt="image">1-5 недель</p>
+                        </div>
+                    </div>
+
+                    <div class="diagram_card">
+                        <div class="diagram_card_head">
+                            <ul class="diagram_card_list">
+                                <li class="diagram_card_task">Запуск на рынок</li>
+                                <li class="diagram_card_task">Поиск ошибок</li>
+                                <li class="diagram_card_task">Устранение багов, правки</li>
+                            </ul>
+                        </div>
+                        <div class="diagram_card_body">
+                            <h3 class="diagram_card_stage">Этап отладки</h3>
                             <p class="diagram_card_duration"><img class="diagram_card_icon"
                                     src="{% static 'img/clock-blue.png' %}" alt="image">1-3 дня</p>
                         </div>
@@ -156,30 +172,12 @@
                     <div class="diagram_card">
                         <div class="diagram_card_head">
                             <ul class="diagram_card_list">
-                                <li class="diagram_card_task">Составляем ТЗ</li>
-                                <li class="diagram_card_task">Устанавливаем цену и сроки</li>
-                                <li class="diagram_card_task">Анализируем рынок</li>
+                                <li class="diagram_card_task">Формируем новую стратегию</li>
+                                <li class="diagram_card_task">Правки</li>
                             </ul>
                         </div>
                         <div class="diagram_card_body">
-                            <h3 class="diagram_card_stage">Этап подготовки</h3>
-                            <p class="diagram_card_duration"><img class="diagram_card_icon"
-                                    src="{% static 'img/clock-blue.png' %}" alt="image">1-3 дня</p>
-                        </div>
-                    </div>
-
-                    <div class="diagram_card">
-                        <div class="diagram_card_head">
-                            <ul class="diagram_card_list">
-                                <li class="diagram_card_task">Составляем ТЗ</li>
-                                <li class="diagram_card_task">Устанавливаем цену и сроки</li>
-                                <li class="diagram_card_task">Анализируем рынок</li>
-                            </ul>
-                        </div>
-                        <div class="diagram_card_body">
-                            <h3 class="diagram_card_stage">Этап подготовки</h3>
-                            <p class="diagram_card_duration"><img class="diagram_card_icon"
-                                    src="{% static 'img/clock-blue.png' %}" alt="image">1-3 дня</p>
+                            <h3 class="diagram_card_stage">Тестирование нового продукта</h3>
                         </div>
                     </div>
 
@@ -205,8 +203,8 @@
                 </div>
                 <h2 class="knowlege_heading">Несколько кейсов</h2>
             </div>
-            <div class="row">
-                <div class="col-7 d-flex align-items-center">
+            <div class="row my-5 my-md-0">
+                <div class="col-md-7 d-flex align-items-center">
                     <div class="case_text">
                         <h3 class="case_title">Сайт для студии <span>SEO и SMM</span></h3>
                         <p class="case_description">Постоянно развивающийся рынок интрент услуг и професиий
@@ -214,54 +212,60 @@
                             услуги играют все большую роль в мировом обороте.</p>
                     </div>
                 </div>
-                <div class="offset-1 col-4">
+                <div class="offset-lg-1 col-md-5 col-lg-4">
                     <div class="case_view">
                         <div class="case_img">
                             <img class="case_img_shape" src="{% static 'img/services/laptop_small.png' %}" alt="image">
-                            <img class="case_img_content" src="{% static 'img/services/web_template.png' %}" alt="image">
+                            <div class="case_img_content">
+                                <img class="" src="{% static 'img/services/web_template.png' %}" alt="image">
+                            </div>
                         </div>
                         <a class="case_link" href="#">Смотреть проект:</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7 d-flex align-items-center">
+            <div class="row mb-5 mb-md-0">
+                <div class="col-md-7 d-flex align-items-center">
                     <div class="case_text">
                         <h3 class="case_title">Платформа <span>электронной коммерции</span></h3>
                         <p class="case_description">Заказчик просил использовать тёмную тему. Сайт занимается аналитикой
                             и позволяет проводить маркетинговые исследования в различных отраслях.</p>
                     </div>
                 </div>
-                <div class="offset-1 col-4">
+                <div class="offset-lg-1 col-md-5 col-lg-4">
                     <div class="case_view">
                         <div class="case_img">
                             <img class="case_img_shape" src="{% static 'img/services/laptop_small.png' %}" alt="image">
-                            <img class="case_img_content" src="{% static 'img/services/web_template2.png' %}" alt="image">
+                            <div class="case_img_content">
+                                <img class="" src="{% static 'img/services/web_template2.png' %}" alt="image">
+                            </div>
                         </div>
                         <a class="case_link" href="#">Смотреть проект:</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7 d-flex align-items-center">
+            <div class="row mb-5 mb-md-0">
+                <div class="col-md-7 d-flex align-items-center">
                     <div class="case_text">
                         <h3 class="case_title">Сайт агенства по <span>привлечению трафика</span></h3>
                         <p class="case_description">Стидии SEO и SMM стали очень многочисленными в наше время, концепт
                             сайта для польско-чешской организации вы можете увидеть в нашем портфолио.</p>
                     </div>
                 </div>
-                <div class="offset-1 col-4">
+                <div class="offset-lg-1 col-md-5 col-lg-4">
                     <div class="case_view">
                         <div class="case_img">
                             <img class="case_img_shape" src="{% static 'img/services/laptop_small.png' %}" alt="image">
-                            <img class="case_img_content" src="{% static 'img/services/web_template3.png' %}" alt="image">
+                            <div class="case_img_content">
+                                <img class="" src="{% static 'img/services/web_template3.png' %}" alt="image">
+                            </div>
                         </div>
                         <a class="case_link" href="#">Смотреть проект:</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7 d-flex align-items-center">
+            <div class="row mb-5 mb-md-0">
+                <div class="col-md-7 d-flex align-items-center">
                     <div class="case_text">
                         <h3 class="case_title">Приложение <span>Акции и скидки</span></h3>
                         <p class="case_description">Хотите быть в курсе самых выгодных акций и скидок в своём городе?
@@ -269,7 +273,7 @@
                             города СНГ</p>
                     </div>
                 </div>
-                <div class="offset-1 col-4">
+                <div class="offset-lg-1 col-md-5 col-lg-4">
                     <div class="case_view">
                         <div class="case_img">
                             <img class="case_img_phone" src="{% static 'img/services/disconts_app.png' %}" alt="image">
@@ -278,8 +282,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-7 d-flex align-items-center">
+            <div class="row mb-5 mb-md-0">
+                <div class="col-md-7 d-flex align-items-center">
                     <div class="case_text">
                         <h3 class="case_title">Приложение <span>Работа в нашем городе</span></h3>
                         <p class="case_description">Еще один быстрорастущий проект. Агрегатор вакансий имеет встроенный
@@ -287,7 +291,7 @@
                             интересные разделы.</p>
                     </div>
                 </div>
-                <div class="offset-1 col-4">
+                <div class="offset-lg-1 col-md-5 col-lg-4">
                     <div class="case_view">
                         <div class="case_img">
                             <img class="case_img_phone" src="{% static 'img/services/jobDN_app.png' %}" alt="image">
@@ -315,7 +319,7 @@
                             - Какие продукты вы создаете?
                         </div>
                         <div class="faq_card_body">
-                            
+
                         </div>
                     </div>
                     <div class="faq_card" data-open="false">
@@ -323,7 +327,9 @@
                             - Сколько длится разработка?
                         </div>
                         <div class="faq_card_body">
-                            Каждый проект индивидуален, создание лендиндинга займёт около 2 недель, приложения, - больше месяца. Обычно мноо времени уходит на этапы отладки и ааптацию на рынке, что является неотъемлемой частью разработки.
+                            Каждый проект индивидуален, создание лендиндинга займёт около 2 недель, приложения, - больше
+                            месяца. Обычно мноо времени уходит на этапы отладки и ааптацию на рынке, что является
+                            неотъемлемой частью разработки.
                         </div>
                     </div>
                     <div class="faq_card" data-open="false">
@@ -331,7 +337,7 @@
                             - Как узнать стоимость моего заказа?
                         </div>
                         <div class="faq_card_body">
-                            
+
                         </div>
                     </div>
                     <div class="faq_card" data-open="false">
@@ -339,7 +345,7 @@
                             - Какие есть варианты и способы оплаты?
                         </div>
                         <div class="faq_card_body">
-                            
+
                         </div>
                     </div>
                     <div class="faq_card" data-open="false">
@@ -347,7 +353,7 @@
                             - Помогаете ли вы с поддрежкой проекта?
                         </div>
                         <div class="faq_card_body">
-                            
+
                         </div>
                     </div>
                 </div>
