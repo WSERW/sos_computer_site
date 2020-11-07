@@ -34,7 +34,7 @@
                             style="letter-spacing: 2px; font-family:'Roboto'; font-weight: 300;">Реализуем как шаблонный
                             проект, для старта так и полноразмерный сложный продукт с уникальными решениями</p>
                         <ul class="wow header_list flex-column flex-lg-row animate__lightSpeedInLeft"
-                            data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10"">
+                            data-wow-duration="2s" data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">
                                 <li><img class=" header_icon" src="{% static 'img/star.png' %}" alt="*"> 20 лет на
                             рынке</li>
                             <li><img class="header_icon" src="{% static 'img/star.png' %}" alt="*"> Индивидуальный
@@ -383,33 +383,7 @@
     <div class="container">
         <div class="row">
             <div class="col-5 pt-4 d-none d-md-block">
-                <form name='client' method="post" enctype="multipart/form-data">
-                    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
-                        data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
-                        Оставьте ваше имя:</label><br>
-                    <input type="text" placeholder="Имя..." name='clientName' class="wow animate__fadeInLeft"
-                        data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10"><br>
-                    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
-                        data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">Номер телефона:</label><br>
-                    <input type="text" placeholder="+380..." name='clientPhone' class="wow animate__fadeInLeft"
-                        data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"><br>
-                    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
-                        data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">Напишите нам:</label><br>
-                    <div class="wow comment animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s"
-                        data-wow-iteration="1" data-wow-distanse="10">
-                        <textarea id="" name="clientMessage" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                        <button class="send"><img src="{% static 'img/telegramm.png' %}" alt="image"
-                                class="send_icon"></button>
-                        {% csrf_token %}
-                    </div>
-                    <div class="wow perc_right wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.9s"
-                        data-wow-iteration="1" data-wow-distanse="10">
-                        <input type="checkbox" id='persRight'>
-                        <label class="perc_right_label" for="persRight">Я даю согласие на обработку своих персональных
-                            данных согласно <a href="#"
-                                style='color:white;text-decoration: underline;'>правилам</a></label>
-                    </div>
-                </form>
+                {% include 'sos_main/forms/contactForm.html' %}
             </div>
             <div class="col-md-6 offset-1">
                 <canvas id='cnv2' height="500" class="wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.3s"
@@ -457,29 +431,6 @@
 {% include 'sos_main/footer.html' %}
 
 <div class="modal_form">
-    <form class="form_modal" action="#">
-        <div class="form_modal_logo">
-            <img src="{% static 'img/logo.png' %}" alt="image">
-        </div>
-        <h3 class="form_modal_heading">Запишитесь к нам:</h3>
-        <label class="form_modal_label" for="">Ваше имя:</label>
-        <input type="text" class="form_modal_input" placeholder="Имя">
-        <label class="form_modal_label" for="">Телефон для связи:</label>
-        <input type="text" class="form_modal_input" placeholder="+380">
-        <label class="form_modal_label" for="">Страна, город:</label>
-        <input type="text" class="form_modal_input" placeholder="Страна, город">
-        <div class="form_modal_copyright">
-            <label for="" class="form_modal_label copyright">Хотите ли вы получить образовательный курс Online?</label>
-            <div class="from_modal_confirm">
-                <input type="checkbox" name="" id="copyryght_yes"><label for="copyryght_yes"
-                    class="form_modal_label">да</label><br>
-                <input type="checkbox" name="" id="copyryght_no"><label for="copyryght_no"
-                    class="form_modal_label">нет</label>
-            </div>
-        </div>
-        <button class="form_modal_btn">Заказать звонок</button>
-        <input type="checkbox" name="" id="copyryght_confirm" class='copyright_checkbox'>
-        <label for="copyryght_confirm" class="form_modal_label">Согласие на обработку данных</label>
-    </form>
+    {% include 'sos_main/forms/modalForm.html' %}
 </div>
 {% endblock %}

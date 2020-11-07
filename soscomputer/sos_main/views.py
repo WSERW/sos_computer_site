@@ -22,7 +22,7 @@ def index(request):
             """
             temp_mail = open('temp_mail.txt','a')
             temp_mail.write(mailText)
-            send_mail('Новая заявка c сайта',mailText,'soscomputeracademy@gmail.com',['soscomputeracademy@gmail.com'],fail_silently=False)
+            # send_mail('Новая заявка c сайта',mailText,'soscomputeracademy@gmail.com',['soscomputeracademy@gmail.com'],fail_silently=False)
             return HttpResponse(clientName+clientPhone+clientMessage)
         else:
             return HttpResponse("false")

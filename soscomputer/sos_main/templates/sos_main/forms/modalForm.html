@@ -1,0 +1,26 @@
+{% load static %}
+<form class="form_modal" action="#">
+    <div class="form_modal_logo">
+        <img src="{% static 'img/logo.png' %}" alt="image">
+    </div>
+    <h3 class="form_modal_heading">Запишитесь к нам:</h3>
+    <label class="form_modal_label" for="">Ваше имя:</label>
+    <input type="text" class="form_modal_input" placeholder="Имя" name='clientName'>
+    <label class="form_modal_label" for="">Телефон для связи:</label>
+    <input type="text" class="form_modal_input" placeholder="+380" name='clientPhone'>
+    <label class="form_modal_label" for="">Страна, город:</label>
+    <input type="text" class="form_modal_input" placeholder="Страна, город" name='clientText'>
+    <div class="form_modal_copyright">
+        <label for="" class="form_modal_label copyright">Хотите ли вы получить образовательный курс Online?</label>
+        <div class="from_modal_confirm">
+            <input type="checkbox" name="clientOnline" id="copyryght_yes"><label for="copyryght_yes"
+                class="form_modal_label">да</label><br>
+            <input type="checkbox" name="clientOnline" id="copyryght_no"><label for="copyryght_no"
+                class="form_modal_label">нет</label>
+        </div>
+    </div>
+    <button class="form_modal_btn">Заказать звонок</button>
+    <input type="checkbox" name="persRight" id="copyryght_confirm" class='copyright_checkbox'>
+    <label for="copyryght_confirm" class="form_modal_label">Согласие на обработку данных</label>
+    {% csrf_token %}
+</form>
