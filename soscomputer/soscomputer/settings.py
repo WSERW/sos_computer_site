@@ -23,15 +23,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ioxmpx3imjk^*^b^rq0%7=2faloj&s1ik1d+@@y8nl=*u#zo_c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-PREPEND_WWW = True
+PREPEND_WWW = False
 
 
 
 ALLOWED_HOSTS = [
     'sos-computer.site',
     'www.sos-computer.site',
+    '127.0.0.1',
+    '*'
 ]
 
 
