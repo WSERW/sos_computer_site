@@ -4,8 +4,7 @@ forms.forEach((form)=>{
         e.preventDefault();
 
         let formData = new FormData(form);
-        console.log(form, formData);
-        // let data =
+
         let xhr = new XMLHttpRequest();
         xhr.open("POST", "/");
         xhr.send(formData);
@@ -18,7 +17,7 @@ forms.forEach((form)=>{
         else{
             xhr.onload = () => {
                 if (xhr.response == "false") {
-                    alert("Произошла ошибка");
+                    alert("Произошла ошибка"+xhr.response);
                 } else {
                     alert("Спасибо, скоро с вами свяжутся");
                     if(form.classList.contains('form_modal')){

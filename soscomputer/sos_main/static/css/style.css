@@ -48,7 +48,7 @@ body {
 main {
     position: relative;
     background-color: var(--main-blue) !important;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     /* margin-bottom: 500px; */
     z-index: 2;
 }

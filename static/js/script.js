@@ -146,8 +146,9 @@ let catalog_info = {
             'Крупное направление, в котором рассмотрены: дизайн интерьеров, ландшафтный дизайн, создание деталей для промышленности, разработка игровых миров и персонажей. Вы изучите: 3dsMax, 4dCinema, AutoCAD, Revit, Photoshop и многое другое. Подкрепите свои знания сильным портфолио.',
         ],
         details: {
-            mature: ['Свой преподаватель', '1,5 - 2,5 месяца', '2 - 3 раза в неделю', 'Скачать программу'],
-            child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', 'Скачать программу'],
+            mature: ['Свой преподаватель', '1,5 - 2,5 месяца', '2 - 3 раза в неделю', ''],
+            child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', ''],
+            programm: ['graf.pdf','web_des.pdf','3d.pdf'],
         },
     },
     progr: {
@@ -161,21 +162,23 @@ let catalog_info = {
             'Разработка мобильных приложений это огромный растущий сегмент рынка. Все рекламодатели переключаются на мобильные устройства. Мы научим вас актуальным тенденциям в верстке приложений, настроим анимации и серверную часть. Изучим языки java и kotlin, подготовим и выложим в маркет свое приложение.',
         ],
         details: {
-            mature: ['Свой преподаватель', '1,5 - 4 месяца', '2 - 3 раза в неделю', 'Скачать программу'],
-            child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', 'Скачать программу'],
+            mature: ['Свой преподаватель', '1,5 - 4 месяца', '2 - 3 раза в неделю', ''],
+            child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', ''],
+            programm: ['front.pdf','python.pdf','android.pdf'],
         },
     },
     market: {
         title: 'Маркетинг',
-        subtitle: ['SEO и SMM', 'Фианансовая грамотность'],
+        subtitle: ['SEO и SMM', 'Финансовая грамотность'],
         text: [
             'В данном курсе мы готовим  хороших маркетологов для бизнеса. Начнём курс с освоения Photoshop, а дальше займемся настройкой рекламы в соц сетях и браузерах.Уделим большое время оптимизации кода сайтов, повысим скорость загрузки, поднимемся в поисковой выдаче.',
 
             'Этот курс тесно связан с маркетингом. Мы разберем несколько разделов открытия собственного дела, работа с командой, рекламные стратегии. Изучим теорию в экономике, научимся прогнозировать и оценивать риски и прибыль. Затронем работу с фондовыми рынками, акции, облигации банковское дело.',
         ],
         details: {
-            mature: ['Свой преподаватель', '1 - 2 месяца', '2 - 3 раза в неделю', 'Скачать программу'],
-            child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', 'Скачать программу'],
+            mature: ['Свой преподаватель', '1 - 2 месяца', '2 - 3 раза в неделю', 'Ска'],
+            child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', ''],
+            programm: ['market.pdf','market.pdf'],
         },
     },
 };
@@ -189,6 +192,7 @@ if (catalog) {
     let catalog_subtitle = catalog.querySelector('.catalog_course_subtitle');
     let catalog_text = catalog.querySelector('.catalog_course_text');
     let catalog_page_list = catalog.querySelectorAll('.catalog_page_button');
+    let catalog_detail_programm = catalog.querySelector('.catalog_course_programm');
     let catalog_detail_list = catalog.querySelectorAll('.catalog_course_detail');
     let page = 0;
     let way = 'progr'
@@ -222,6 +226,7 @@ if (catalog) {
                 this.style.background = "var(--main-blue)";
                 catalog_subtitle.innerText = catalog_info[way]["subtitle"][page - 1]
                 catalog_text.innerText = catalog_info[way]['text'][page - 1]
+                catalog_detail_programm.href = '/static/programm'+catalog_info[way]['details']['programm'][page - 1]
                 page++;
             }, 300);
         })
@@ -265,6 +270,7 @@ if (catalog) {
                 catalog_title.innerText = catalog_info[way]["title"]
                 catalog_subtitle.innerText = catalog_info[way]["subtitle"][page]
                 catalog_text.innerText = catalog_info[way]['text'][page]
+                catalog_detail_programm.href = '/static/programm/'+catalog_info[way]['details']['programm'][page]
                 let detail = 0;
                 catalog_detail_list.forEach(function (e) {
                     e.lastChild.textContent = catalog_info[way]['details'][age][detail];
@@ -309,6 +315,7 @@ if (catalog) {
                 this.style.textDecoration = 'underline'
                 this.style.height = '12%';
                 this.style.top = '-12%';
+                catalog_detail_programm.href = '/static/programm'+catalog_info[way]['details']['programm'][page - 1]
                 catalog_detail_list.forEach(function (e) {
                     e.lastChild.textContent = catalog_info[way]['details'][age][detail];
                     detail++;
