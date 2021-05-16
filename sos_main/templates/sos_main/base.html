@@ -1,5 +1,6 @@
 {% load static %}
 <html>
+<<<<<<< HEAD
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,13 +38,48 @@
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.min.js' %}"></script>
 
+=======
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZK4957TXX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-9ZK4957TXX');
+        </script>
+        <meta charset="UTF-8">
+        {% block meta %}
+        
+        {% endblock %}
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'animate.css-main/animate.css' %}">
+
+
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.js' %}"></script>
+
+    </head>
+    <body class="preloader_body">
+    {% block content %}
+    {% endblock %}
+>>>>>>> 95fb2f6d9db3ba68a3ef6b02c5d212208fb09f7f
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
     <script src="{% static 'js/script.js' %}"></script>
+<<<<<<< HEAD
     <script src="{% static 'js/ajax.js' %}"></script>
 
 </body>
 
+=======
+    </body>
+>>>>>>> 95fb2f6d9db3ba68a3ef6b02c5d212208fb09f7f
 </html>

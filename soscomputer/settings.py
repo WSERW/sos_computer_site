@@ -23,6 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ioxmpx3imjk^*^b^rq0%7=2faloj&s1ik1d+@@y8nl=*u#zo_c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = True
 
 PREPEND_WWW = False
@@ -34,6 +35,15 @@ ALLOWED_HOSTS = [
     'www.sos-computer.site',
     '127.0.0.1',
     '*'
+=======
+DEBUG = False
+
+ALLOWED_HOSTS = [
+    '85680d651617.ngrok.io',
+    '127.0.0.1',
+    'sos-computer.site',
+    'www.sos-computer.site',
+>>>>>>> 95fb2f6d9db3ba68a3ef6b02c5d212208fb09f7f
 ]
 
 
@@ -123,6 +133,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+<<<<<<< HEAD
 EMAIL_HOST = 'smtp.gmail.com'
 
 EMAIL_HOST_USER = 'soscomputeracademy@gmail.com'
@@ -133,6 +144,8 @@ EMAIL_PORT = 587
 
 EMAIL_USE_TLS = True
 
+=======
+>>>>>>> 95fb2f6d9db3ba68a3ef6b02c5d212208fb09f7f
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -141,7 +154,10 @@ STATIC_URL = '/static/'
 
 
 STATIC_ROOT='static/'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 95fb2f6d9db3ba68a3ef6b02c5d212208fb09f7f
 STATICFILES_DIRS = [
     # os.path.join(BASE_DIR, "static"),
     os.path.join(BASE_DIR, 'sos_main', "static"),
