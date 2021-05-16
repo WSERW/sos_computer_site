@@ -1488,6 +1488,7 @@ footer .about li{
     font-weight: 600;
     font-size: 20px;
     user-select: none;
+    padding-right:25px;
 }
 .faq_card_body{
     transform-origin: top;
@@ -1503,7 +1504,7 @@ footer .about li{
 }
 .faq_card[data-open='true'] .faq_card_body{
     transform: scaleY(1);
-    height: auto;
+    height: auto; /* 175px */
     padding-top: 40px;
 
     display: block;
@@ -1568,8 +1569,5 @@ footer .about li{
     }
     .course_text_icon{
         /* left: -30px !important; */
-    }
-    .course_main_text{
-        font-size: 19px;
     }
 }
