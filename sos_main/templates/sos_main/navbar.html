@@ -1,0 +1,46 @@
+{% load static %}
+<nav class="wow navbar navbar-expand-lg navbar-dark animate__fadeInDown" data-wow-duration="2s" data-wow-delay="0"
+    data-wow-offset="10" data-wow-iteration="1">
+    <a class="navbar-brand" href="#"><img src="{% static 'img/logo.svg'%}" alt='logo sos'></a>
+    <div class="navbar_numbers">
+        <p><a href="tel:+380660836532"><img class="number_phone" src="{% static 'img/phone.png' %}" alt="tel:">095 - 462
+                - 46 - 72</a></p>
+        <p><a href="tel:+380660836532"><img class="number_phone" src="{% static 'img/phone.png' %}" alt="tel:">071 - 405
+                - 68 - 46</a></p>
+    </div>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar_social">
+            <a href="https://vk.com/sos_computer_academy" target="_blank"><img src="{% static 'img/vk.svg' %}"
+                    alt="vk"></a>
+            <a href="https://www.instagram.com/computercourses_in_donetsk" target="_blank"><img
+                    src="{% static 'img/instagram.svg' %}" alt="inst"></a>
+            <a href="https://www.youtube.com/channel/UCQO8oYQ50PukJvvMgoGVl3w" target="_blank"><img
+                    src="{% static 'img/youtube.svg' %}" alt="youtube"></a>
+        </div>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mr-3">
+                <a class="nav-link" href="{% url 'index' %}">Про академию</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link" href="{% url 'course' %}">Курсы</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link" href="{% url 'services' %}">Услуги</a>
+            </li>
+            <li class="nav-item mr-3">
+                <a class="nav-link" href="#">Партнёрам</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>

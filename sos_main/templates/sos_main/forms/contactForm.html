@@ -1,0 +1,30 @@
+{% load static %}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<form name='client' method="post" enctype="multipart/form-data">
+    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
+        data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10">
+        Оставьте ваше имя:</label><br>
+    <input type="text" placeholder="Имя..." name='clientName' class="wow animate__fadeInLeft"
+        data-wow-duration="2s" data-wow-delay="0" data-wow-iteration="1" data-wow-distanse="10"><br>
+    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
+        data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10">Номер телефона:</label><br>
+    <input type="text" placeholder="+380..." name='clientPhone' class="wow animate__fadeInLeft"
+        data-wow-duration="2s" data-wow-delay="0.3s" data-wow-iteration="1" data-wow-distanse="10"><br>
+    <label for="" class="wow contacts_text animate__fadeInLeft" data-wow-duration="2s"
+        data-wow-delay="0.6s" data-wow-iteration="1" data-wow-distanse="10">Напишите нам:</label><br>
+    <div class="wow comment animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.6s"
+        data-wow-iteration="1" data-wow-distanse="10">
+        <textarea id="" name="clientMessage" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        <button class="send"><img src="{% static 'img/telegramm.png' %}" alt="image"
+                class="send_icon"></button>
+        {% csrf_token %}
+    </div>
+    <div class="wow perc_right wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0.9s"
+        data-wow-iteration="1" data-wow-distanse="10">
+        <input type="checkbox" id='persRight' name='persRight'>
+        <label class="perc_right_label" for="persRight">Я даю согласие на обработку своих персональных
+            данных согласно <a href="#"
+                style='color:white;text-decoration: underline;'>правилам</a></label>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LfW78IaAAAAABcnpqcODWop5l4K6przstS2nUnX"></div>
+</form>
