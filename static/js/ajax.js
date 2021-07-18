@@ -19,7 +19,7 @@ forms.forEach((form)=>{
                 if (xhr.response == "false") {
                     alert("Произошла ошибка"+xhr.response);
                 } else {
-                    alert("Спасибо, скоро с вами свяжутся");
+                    alert(xhr.response);
                     if(form.classList.contains('form_modal')){
                         form.parentElement.style.display = 'none'
                     }
