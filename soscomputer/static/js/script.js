@@ -176,7 +176,7 @@ let catalog_info = {
             'Этот курс тесно связан с маркетингом. Мы разберем несколько разделов открытия собственного дела, работа с командой, рекламные стратегии. Изучим теорию в экономике, научимся прогнозировать и оценивать риски и прибыль. Затронем работу с фондовыми рынками, акции, облигации банковское дело.',
         ],
         details: {
-            mature: ['Свой преподаватель', '1 - 2 месяца', '2 - 3 раза в неделю', 'Ска'],
+            mature: ['Свой преподаватель', '1 - 2 месяца', '2 - 3 раза в неделю', ''],
             child: ['Малая группа', '1,5 года', '1 - 3 раза в неделю', ''],
             programm: ['market.pdf','market.pdf'],
         },
@@ -197,7 +197,6 @@ if (catalog) {
     let page = 0;
     let way = 'progr'
     let age = 'mature'
-    console.log(catalog_detail_list)
     catalog_page_list.forEach(function (btn) {
         btn.addEventListener('click', function (elem) {
 
@@ -206,7 +205,6 @@ if (catalog) {
             catalog_subtitle.style.opacity = '0';
             catalog_detail_list.forEach(function (e) {
                 e.style.opacity = '0';
-                console.log(e);
             });
 
             setTimeout(() => {
@@ -336,7 +334,6 @@ let plusList = document.querySelectorAll('.particles .plus')
 let blopList = document.querySelectorAll('.particles .blop')
 let laptopGirl = document.querySelector('.laptop_girl')
 
-console.log(plusList)
 
 window.addEventListener('mousemove', function (e) {
     if (e.clientX < document.body.clientWidth / 2) {
@@ -396,7 +393,6 @@ let faqCards = document.querySelectorAll('.faq_card');
 faqCards.forEach(function (e) {
     e.addEventListener('click', function () {
         if (this.dataset.open === 'true') {
-            console.log(this);
             // this.querySelector('.faq_card_body').style.display = 'none';
             // this.querySelector('.faq_card_body').style.transform = 'scaleY(0)';
 

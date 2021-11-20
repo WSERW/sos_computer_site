@@ -1251,7 +1251,7 @@ hr {
     width: 40px;
     height: 40px;
     position: absolute;
-    bottom: 31px;
+    bottom: 25px;
     right: 0;
     transition: 0.5s;
     transform-origin: right bottom;
@@ -1337,13 +1337,15 @@ label {
 
 .form_modal {
     width: 400px;
-    height: 600px;
+    height: 680px;
     padding: 10px 30px 20px 30px;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: black 0 0 100px 20px;
 }
-
+.form_modal .g-recaptcha div{
+    margin: 0 auto;
+}
 .form_modal_logo {
     height: 75px;
     width: 75px;
@@ -2033,6 +2035,44 @@ footer .about li a {
     font-weight: 700;
 }
 
+.popup_wrapper{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+.popup_wrapper.active{
+    display: block;
+}
+.modal_warning.active,
+.modal_success.active {
+    transform: translate(-50%,-50%);
+}
+.modal_warning,.modal_success{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-1000px);
+    background-color: #fff;
+    height: 200px;
+    width: 350px;
+    color: var(--main-blue);
+    text-align: center;
+    padding-top: 35px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.modal_success{
+    padding-top: 60px;
+}
+.warning_info{
+    font-size: 20px;
+    margin-top: 20px;
+}
 @media (max-width: 1200px) {
     .catalog_page_buttons {
         margin-left: auto;

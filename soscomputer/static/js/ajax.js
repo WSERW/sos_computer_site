@@ -1,4 +1,16 @@
 let forms = document.querySelectorAll("form");
+let popupWrapper = document.querySelectorAll(".popup_wrapper");
+let warning = document.querySelector("#warning");
+let success = document.querySelector("#success");
+popupWrapper.forEach(function(popup){
+    popup.addEventListener('click',function(e){
+        if(e.target == this){
+            this.querySelector('div').classList.remove('active')
+            setTimeout(()=>{this.classList.remove('active')},300)
+        }
+    })
+})
+
 forms.forEach((form)=>{
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -7,19 +19,48 @@ forms.forEach((form)=>{
 
         let xhr = new XMLHttpRequest();
         xhr.open("POST", "/");
-        xhr.send(formData);
         if (!formData.get('persRight')){
-            alert('Подтвердите пользовательское соглашение')
+            warning.classList.add('active')
+            setTimeout(()=>{
+                warning.querySelector('.modal_warning').classList.add('active')
+            },0);
+            warning.querySelector('.warning_info').innerText = 'Пожалуйста, подтвердите пользовательское соглашение!';
         }
         else if(!formData.get('clientName') || !formData.get('clientPhone')){
-            alert('Пожалуйста, заполните контактные данные')
+            warning.classList.add('active')
+            setTimeout(()=>{
+                warning.querySelector('.modal_warning').classList.add('active')
+            },0);
+            warning.querySelector('.warning_info').innerText = 'Пожалуйста, заполните контактные данные!';
+        }
+        else if(!formData.get('g-recaptcha-response')){
+            warning.classList.add('active')
+            setTimeout(()=>{
+                warning.querySelector('.modal_warning').classList.add('active')
+            },0);
+            warning.querySelector('.warning_info').innerText = 'Пожалуйста, подтвердите, что вы не робот!';
         }
         else{
+            xhr.send(formData);
             xhr.onload = () => {
                 if (xhr.response == "false") {
-                    alert("Произошла ошибка"+xhr.response);
-                } else {
-                    alert("Спасибо, скоро с вами свяжутся");
+                    warning.classList.add('active')
+                    setTimeout(()=>{
+                        warning.querySelector('.modal_warning').classList.add('active')
+                    },0);
+                    warning.querySelector('.warning_info').innerText = 'Произошла ошибка!';
+                } else if (xhr.response == "captch") {
+                    warning.classList.add('active')
+                    setTimeout(()=>{
+                        warning.querySelector('.modal_warning').classList.add('active')
+                    },0);
+                    warning.querySelector('.warning_info').innerText = 'Пожалуйста, подтвердите, что вы не робот!';
+                } 
+                else if(xhr.response == "true") {
+                    success.classList.add('active')
+                    setTimeout(()=>{
+                        success.querySelector('.modal_success').classList.add('active')
+                    },0);
                     if(form.classList.contains('form_modal')){
                         form.parentElement.style.display = 'none'
                     }

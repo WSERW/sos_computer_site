@@ -85,7 +85,7 @@
                     <div class="course">
                         <div class="course_card">
                             <img src="{% static 'img/boy_course.png' %}" alt="image" class="course_card_img">
-                            <a href="course.html#mature" class="course_card_link">Смотреть курсы</a>
+                            <a href="{% url 'course' %}#mature" class="course_card_link">Смотреть курсы</a>
                         </div>
                         <div class="course_text">
                             <h3 class="course_text_label">Для детей</h3>
@@ -101,7 +101,7 @@
                     <div class="course">
                         <div class="course_card">
                             <img src="{% static 'img/girl_course.png' %}" alt="image" class="course_card_img">
-                            <a href="course.html#mature" class="course_card_link">Смотреть курсы</a>
+                            <a href="{% url 'course' %}#mature" class="course_card_link">Смотреть курсы</a>
                         </div>
                         <div class="course_text">
                             <h3 class="course_text_label">Для взрослых</h3>
@@ -413,9 +413,12 @@
 </section>
 <!-- </div> -->
 
+
 {% include 'sos_main/footer.html' %}
 
 <div class="modal_form">
     {% include 'sos_main/forms/modalForm.html' %}
 </div>
+{% include 'sos_main/forms/popups/success.html' %}
+{% include 'sos_main/forms/popups/warning.html' %}
 {% endblock %}
