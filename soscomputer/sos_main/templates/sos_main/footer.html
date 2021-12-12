@@ -7,7 +7,8 @@
             <div class="col-2">
                 <p class="team">Команда</p>
                 <img src="{% static 'img/logo.svg' %}" alt="logo">
-                <p class="age">1999-2020</p>
+                {% now "Y" as year %}
+                <p class="age">1999-{{year}}</p>
             </div>
             <div class="col-2 offset-2">
                 <p class="footer_headings">О нас</p>
@@ -34,20 +35,6 @@
                     <li>Сб-Вс</li>
                     <li>9:00-18:00</li>
                 </ul>
-            </div>
-            <div class="col-2">
-                <p class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="language" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        English
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="language">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </p>
             </div>
         </div>
     </div>

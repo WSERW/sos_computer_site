@@ -207,10 +207,10 @@ let catalog_info = {
             text: [
                 'Этот курс включает общешкольную подготовку для детей. В нём рассмотрены документооборот, электронные таблицы, графики и диаграммы, презентации, работа с сетью и интернетом, безопасность и настройка компьютера. Ребёнок получит все необходимые знания для школы, университета и обычной офисной работы.',
     
-                'Курс администрирования для взрослых подойдёт для офисной работы, также есть сборка для пенсионеров. В ходе обучения мы рассматриваем документооборот, электронные таблицы, графики и диаграммы, презентации, работу с сетью и интернетом, безопасность и настройку компьютера. При необходимости, вы можете углублённо изучить Эксель, для работы в сфере химии, физики, статистики, математики и т.д.'
+                'Курс администрирования для взрослых подойдёт для офисной работы, также есть сборка для пенсионеров. В ходе обучения мы рассматриваем документооборот, электронные таблицы, графики и диаграммы, презентации, работу с сетью и интернетом, безопасность и настройку компьютера.'
             ],
             details:  ['Малая группа', '1,5 года', '1 - 3 раза в неделю', ''],
-            programm: ['market.pdf','market.pdf'],
+            programm: ['base.pdf','base.pdf'],
         },
     },
     
@@ -257,7 +257,7 @@ if (catalog) {
                 this.style.background = "var(--main-blue)";
                 catalog_subtitle.innerText = catalog_info[age][way]["subtitle"][page - 1]
                 catalog_text.innerText = catalog_info[age][way]['text'][page - 1]
-                catalog_detail_programm.href = '/static/programm'+catalog_info[age][way]['details'][page - 1]
+                catalog_detail_programm.href = '/static/programm/'+catalog_info[age][way]['programm'][page - 1]
                 page++;
             }, 300);
         })
@@ -331,7 +331,7 @@ if (catalog) {
                 });
 
 
-
+                page = 0;
                 age = this.id;
                 let lastWay = document.querySelectorAll('.catalog_label_way')[2];
                 if(age == 'child'){
@@ -353,6 +353,13 @@ if (catalog) {
                 this.style.textDecoration = 'underline'
                 this.style.height = '12%';
                 this.style.top = '-12%';
+                catalog_page_list.forEach(function (e) {
+                    e.style.background = 'var(--second-blue)';
+                });
+                catalog_page_list[0].style.background = "var(--main-blue)";
+                catalog_title.innerText = catalog_info[age][way]["title"]
+                catalog_subtitle.innerText = catalog_info[age][way]["subtitle"][page]
+                catalog_text.innerText = catalog_info[age][way]['text'][page]
                 catalog_detail_programm.href = '/static/programm/'+catalog_info[age][way]['programm'][page]
                 catalog_detail_list.forEach(function (e) {
                     e.lastChild.textContent = catalog_info[age][way]['details'][detail];
