@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from .models import Order
+from .telegramm import send_message
 
 # Create your views here.
 
@@ -20,7 +21,6 @@ def index(request):
         except Exception as e:
             print(e)
         if captcha_resolved:
-            print(captcha_resolved)
             if client_name and client_phone and client_message:
                 order = Order(
                     name=client_name,
@@ -28,7 +28,8 @@ def index(request):
                     description=client_message,
                 )
                 order.save()
-                # send_mail('Новая заявка c сайта',mailText,'soscomputeracademy@gmail.com',['soscomputeracademy@gmail.com'],fail_silently=False)
+                mailText = f'Имя:{client_name} \nТелефон:{client_phone} \nСообщение:{client_message}'
+                send_message(f'Новая заявка c сайта:\n{mailText}')
                 return HttpResponse("true")
             else:
                 return HttpResponse("false")
